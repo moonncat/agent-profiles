@@ -181,3 +181,12 @@ provenance: 实战于两个并行业务仓（不同技术栈、共用一套调�
 2. **回路按序补齐**：审批快车道（宁松勿拒 + fail-safe）→ supervisor 巡检（45min 三无判死 + 裁决回写四件事）→ 交付环（两绿合并 + 回读验证）。
 3. **每回路一个传感器**：派发看锚点+会话、执行看分支/评论、审批看审计日志、合并看回读——没有可回读锚点的环节就是开环。
 4. **红线四条**（落地就要有，不能后补）：状态只存评论；判重键含指令身份；触发后双验；reject 默认禁止。
+
+---
+
+## 9. 支持文件（references/，复现材料包）
+
+- `references/cron-prompts.md` — 四条回路的 cron 提示词模板（含决策授权、建单授权、输出纪律全文）
+- `references/script-contracts.md` — dispatcher / 审批 / 应急派发器伪代码合同 + state 文件约定
+- `references/dispatch-job-contract.md` — 编排 job 参数、扫描状态机、dispatch() 合同
+- `references/permission-ruleset-template.md` — 会话级权限白名单模板（按栈扩展）
