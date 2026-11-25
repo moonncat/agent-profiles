@@ -190,3 +190,4 @@ provenance: 实战于两个并行业务仓（不同技术栈、共用一套调�
 - `references/script-contracts.md` — dispatcher / 审批 / 应急派发器伪代码合同 + state 文件约定
 - `references/dispatch-job-contract.md` — 编排 job 参数、扫描状态机、dispatch() 合同
 - `references/permission-ruleset-template.md` — 会话级权限白名单模板（按栈扩展）
+- `references/no-hermes-variant.md` — 无 Hermes 移植变体（opencode + Linux 调度器：wrapper、看护、降级 delivery-loop）
